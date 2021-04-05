@@ -13,13 +13,13 @@ class Stack :
         del self.__stack_list[-1]
         return val
 
-# list_1=Stack()
-# # 
-# print(list_1.push(3))
-# print(list_1.push(2))
-# print(list_1.push(1))
-# # print(list_1.pop())
-# print(list_1.get_list())
+list_1=Stack()
+# 
+print(list_1.push(3))
+print(list_1.push(2))
+print(list_1.push(1))
+print(list_1._Stack__stack_list) # how to access to a private instance from outside class
+print(list_1.pop())
 
 class AddingStack(Stack):
     def __init__(self):
@@ -47,7 +47,6 @@ for i in range(5):
     stack_object.push(i)
 
 print(stack_object.get_sum())
-
 for i in range(5):
     stack_object.pop()
 
